@@ -1,0 +1,20 @@
+{
+  "hetero": false,
+  "machines": 10,
+  "arrival_compression": 0.001,
+  "target_tasks": 100,
+  "schedulers": [
+    "HEFT",
+    "EADAGS_SR",
+    "ProposedV2"
+  ],
+  "scheduler_config": {
+    "proposed_lambda_load": 0.05,
+    "proposed_lambda_communication": 0.02,
+    "eadags_slack_fraction": 0.05
+  },
+  "config_overrides": [
+    "power.sleep_power_w=22"
+  ],
+  "machine_classes": null
+}

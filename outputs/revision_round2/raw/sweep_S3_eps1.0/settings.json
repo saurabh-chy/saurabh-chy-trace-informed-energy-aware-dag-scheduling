@@ -1,0 +1,35 @@
+{
+  "hetero": true,
+  "machines": 10,
+  "arrival_compression": 0.001,
+  "target_tasks": 100,
+  "schedulers": [
+    "ProposedV2"
+  ],
+  "scheduler_config": {
+    "proposed_lambda_load": 0.05,
+    "proposed_lambda_communication": 0.02,
+    "eadags_slack_fraction": 0.05,
+    "v2_slack_fraction": 1.0
+  },
+  "machine_classes": {
+    "legacy": {
+      "speed_multiplier": 0.8,
+      "idle_power_w": 120.0,
+      "peak_power_w": 250.0,
+      "sleep_power_w": 15.0
+    },
+    "baseline": {
+      "speed_multiplier": 1.0,
+      "idle_power_w": 99.0,
+      "peak_power_w": 220.0,
+      "sleep_power_w": 11.0
+    },
+    "efficient": {
+      "speed_multiplier": 1.25,
+      "idle_power_w": 65.0,
+      "peak_power_w": 230.0,
+      "sleep_power_w": 7.0
+    }
+  }
+}

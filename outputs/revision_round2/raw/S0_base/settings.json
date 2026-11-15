@@ -1,0 +1,17 @@
+{
+  "hetero": false,
+  "machines": 200,
+  "arrival_compression": 1.0,
+  "target_tasks": 100,
+  "schedulers": [
+    "HEFT",
+    "EADAGS_adapted",
+    "ProposedV2"
+  ],
+  "scheduler_config": {
+    "proposed_lambda_load": 0.05,
+    "proposed_lambda_communication": 0.02,
+    "eadags_slack_fraction": 0.05
+  },
+  "machine_classes": null
+}

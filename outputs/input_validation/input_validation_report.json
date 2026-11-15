@@ -1,0 +1,12 @@
+{
+  "workload_id": "real_subset",
+  "job_count": 500,
+  "task_count": 2223,
+  "edge_count": 1798,
+  "machine_count": 200,
+  "dag_is_acyclic": true,
+  "selected_job_id_count": 500,
+  "selected_job_ids_match": true,
+  "selected_machine_id_count": 200,
+  "selected_machine_ids_match": true
+}

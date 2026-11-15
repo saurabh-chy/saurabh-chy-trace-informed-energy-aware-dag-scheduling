@@ -1,0 +1,127 @@
+{
+  "random_seeds": [
+    42,
+    101,
+    202
+  ],
+  "execution": {
+    "cpu_sensitive_fraction": 0.5,
+    "minimum_machine_speed_factor": 0.25,
+    "use_instance_median_runtime": true
+  },
+  "power": {
+    "peak_power_w": 220.0,
+    "idle_power_w": 99.0,
+    "sleep_power_w": 11.0,
+    "dynamic_power_alpha": 1.4,
+    "frequencies": [
+      {
+        "id": "f050",
+        "relative_frequency": 0.5,
+        "relative_voltage": 0.7
+      },
+      {
+        "id": "f063",
+        "relative_frequency": 0.625,
+        "relative_voltage": 0.78
+      },
+      {
+        "id": "f075",
+        "relative_frequency": 0.75,
+        "relative_voltage": 0.86
+      },
+      {
+        "id": "f088",
+        "relative_frequency": 0.875,
+        "relative_voltage": 0.93
+      },
+      {
+        "id": "f100",
+        "relative_frequency": 1.0,
+        "relative_voltage": 1.0
+      }
+    ]
+  },
+  "dpm": {
+    "break_even_threshold_s": 13.25,
+    "sleep_entry_delay_s": 1.0,
+    "wake_up_delay_s": 10.0,
+    "sleep_entry_energy_j": 8.0,
+    "wake_up_energy_j": 14.0,
+    "initial_machine_state": "idle",
+    "allow_predictive_wakeup": false
+  },
+  "communication": {
+    "scenario_medians_mb": {
+      "low": 8.0,
+      "medium": 64.0,
+      "high": 512.0
+    },
+    "lognormal_sigma": 0.75,
+    "minimum_mb": 0.25,
+    "maximum_mb": 4096.0,
+    "all_remote_scope": "cross_rack",
+    "scopes": {
+      "same_machine": {
+        "latency_ms": 0.0,
+        "bandwidth_gbps": 1000.0,
+        "queue_multiplier": 1.0,
+        "fixed_energy_j": 0.0,
+        "hop_count": 0,
+        "energy_nj_per_bit_hop": 0.0
+      },
+      "same_rack": {
+        "latency_ms": 0.05,
+        "bandwidth_gbps": 25.0,
+        "queue_multiplier": 1.05,
+        "fixed_energy_j": 0.01,
+        "hop_count": 2,
+        "energy_nj_per_bit_hop": 0.05
+      },
+      "cross_rack": {
+        "latency_ms": 0.2,
+        "bandwidth_gbps": 10.0,
+        "queue_multiplier": 1.2,
+        "fixed_energy_j": 0.05,
+        "hop_count": 4,
+        "energy_nj_per_bit_hop": 0.1
+      },
+      "cross_cluster": {
+        "latency_ms": 2.0,
+        "bandwidth_gbps": 2.0,
+        "queue_multiplier": 1.5,
+        "fixed_energy_j": 0.2,
+        "hop_count": 8,
+        "energy_nj_per_bit_hop": 0.2
+      }
+    }
+  },
+  "scheduler": {
+    "proposed_lambda_load": 0.05,
+    "proposed_lambda_communication": 0.02,
+    "eadags_slack_fraction": 0.05
+  },
+  "scalability": {
+    "target_task_counts": [
+      100,
+      250,
+      500,
+      1000
+    ],
+    "machine_counts": [
+      10,
+      25,
+      50
+    ],
+    "arrival_compression_factor": 0.01,
+    "seeds": [
+      42,
+      101,
+      202
+    ]
+  },
+  "statistics": {
+    "bootstrap_resamples": 2000,
+    "alpha": 0.05
+  }
+}
