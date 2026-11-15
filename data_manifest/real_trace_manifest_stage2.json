@@ -1,0 +1,18 @@
+﻿{
+    "dataset":  "Alibaba Cluster Trace v2018 machine-usage subset",
+    "created_at":  "2026-06-28T21:13:02.4965965+05:30",
+    "source_machine_usage":  "D:\\New folder\\machine_usage\\machine_usage.csv",
+    "selected_machine_ids":  "D:\\New folder\\Alibaba2018_Real_Subset\\selected_machine_ids.txt",
+    "usage_stats":  {
+                        "LinesRead":  246934820,
+                        "MatchedRows":  12306718,
+                        "ValidRows":  2580990,
+                        "InvalidRows":  9725728,
+                        "MalformedRows":  0,
+                        "DistinctMachines":  200
+                    },
+    "outputs":  {
+                    "real_machine_usage":  "D:\\New folder\\Alibaba2018_Real_Subset\\real_machine_usage.csv",
+                    "real_machine_usage_summary":  "D:\\New folder\\Alibaba2018_Real_Subset\\real_machine_usage_summary.csv"
+                }
+}

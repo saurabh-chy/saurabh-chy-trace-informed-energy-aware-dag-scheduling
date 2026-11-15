@@ -1,0 +1,45 @@
+﻿{
+    "dataset":  "Alibaba Cluster Trace v2018 real subset",
+    "created_at":  "2026-06-28T20:11:13.7744757+05:30",
+    "source_batch_task":  "D:\\New folder\\batch_task\\batch_task.csv",
+    "source_batch_instance":  "D:\\New folder\\batch_instance\\batch_instance.csv",
+    "source_machine_meta":  "D:\\New folder\\machine_meta\\machine_meta.csv",
+    "parameters":  {
+                       "maximum_jobs":  500,
+                       "maximum_planned_instances":  250000,
+                       "machine_usage_machine_limit":  200
+                   },
+    "task_stats":  {
+                       "JobsObserved":  4201014,
+                       "EligibleJobs":  1746014,
+                       "SelectedJobs":  500,
+                       "SelectedPlannedInstances":  92943,
+                       "SelectedTasks":  2223,
+                       "DagEdges":  1798
+                   },
+    "instance_stats":  {
+                           "LinesRead":  1351255775,
+                           "MatchedRows":  92796,
+                           "ValidRows":  89615,
+                           "InvalidRows":  3181,
+                           "MalformedRows":  0,
+                           "DistinctMachines":  3853
+                       },
+    "machine_stats":  {
+                          "MachinesReferencedByValidInstances":  3853,
+                          "MachinesFoundInMetadata":  3853,
+                          "MachinesSelectedForUsage":  200,
+                          "MetadataRowsForReferencedMachines":  16888,
+                          "MetadataRowsForSelectedMachines":  998
+                      },
+    "outputs":  {
+                    "real_jobs":  "D:\\New folder\\Alibaba2018_Real_Subset\\real_jobs.csv",
+                    "real_tasks":  "D:\\New folder\\Alibaba2018_Real_Subset\\real_tasks.csv",
+                    "real_dag_edges":  "D:\\New folder\\Alibaba2018_Real_Subset\\real_dag_edges.csv",
+                    "real_instances_all":  "D:\\New folder\\Alibaba2018_Real_Subset\\real_instances_all.csv",
+                    "real_instances_valid":  "D:\\New folder\\Alibaba2018_Real_Subset\\real_instances.csv",
+                    "real_machine_capacities":  "D:\\New folder\\Alibaba2018_Real_Subset\\real_machine_capacities.csv",
+                    "selected_job_ids":  "D:\\New folder\\Alibaba2018_Real_Subset\\selected_job_ids.txt",
+                    "selected_machine_ids":  "D:\\New folder\\Alibaba2018_Real_Subset\\selected_machine_ids.txt"
+                }
+}
